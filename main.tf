@@ -35,6 +35,12 @@ locals {
         "terraform-fmt / lint",
       ]
     },
+    "terraform-noop-provider" = {
+      protected_branch       = "main"
+      visibility             = "public"
+      license                = "mit"
+      required_status_checks = []
+    },
     "ansible-collections" = {
       protected_branch = "main"
       visibility       = "public"
@@ -98,6 +104,50 @@ locals {
       required_status_checks = []
     },
     "simple-static-website" = {
+      protected_branch       = "main"
+      visibility             = "public"
+      license                = "mit"
+      required_status_checks = []
+    },
+    "k8s-admission-controller" = {
+      protected_branch       = "main"
+      visibility             = "public"
+      license                = "mit"
+      required_status_checks = []
+    },
+    "k8s-noop-operator" = {
+      protected_branch       = "main"
+      visibility             = "public"
+      license                = "mit"
+      required_status_checks = []
+    },
+    "grafana-dashboards" = {
+      protected_branch       = "main"
+      visibility             = "public"
+      license                = "mit"
+      required_status_checks = []
+    },
+    "go-leetcode" = {
+      protected_branch       = "main"
+      visibility             = "public"
+      license                = "mit"
+      required_status_checks = []
+    },
+    "go-nethttp-healthz" = {
+      protected_branch       = "main"
+      visibility             = "public"
+      license                = "mit"
+      required_status_checks = []
+    },
+    "java-spring-healthz" = {
+      protected_branch = "main"
+      visibility       = "public"
+      license          = "mit"
+      required_status_checks = [
+        "verify",
+      ]
+    },
+    "python-flask-healthz" = {
       protected_branch       = "main"
       visibility             = "public"
       license                = "mit"
